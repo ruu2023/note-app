@@ -26,7 +26,7 @@ const NoteItem = ({ note }: NoteProps) => {
         <h3 className="text-purple-500 hover:text-purple-700 text-lg md:text-xl font-semibold mb-3 underline">
           {note.title}
         </h3>
-        {parse(note.content.toString().slice(0, 26) + "...")}
+        {parse(note.content)}
       </Link>
     </div>
   );
